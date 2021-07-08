@@ -1,1 +1,68 @@
-/* fill in styles here */
+html, body {
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#navbar {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.nav-element {
+    padding: 10px;
+}
+#nav-left {
+    
+}
+#nav-right {
+    position: absolute;
+    right: 0px;
+}
+#cont {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+}
+#logo {
+    align-self: center;
+}
+#search {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-self: center;
+}
+#buttons {
+    align-self: center;
+    padding-top: 5%;
+}
+#footer {
+    position: absolute;
+    height: 10%;
+    background-color: lightgrey;
+    bottom: 0%;
+    width: 100%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#carbon {
+    text-align: center;
+}
+#footnav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
