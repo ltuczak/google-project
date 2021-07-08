@@ -1,68 +1,151 @@
 html, body {
-    height: 100%;
+    height: 100vh;
 }
 .container {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 #navbar {
     position: relative;
-    top: 0%;
-    width: 100%;
+    top: 0;
+    width: 100vw;
+    height: 200px;
     display: flex;
     flex-direction: row;
 }
-.nav-element {
-    padding: 10px;
-}
+
 #nav-left {
-    
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 #nav-right {
-    position: absolute;
+    height: 100%;
+    position: fixed;
     right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.nav-element {
+    padding: 10px;
+    height: 100%;
+    width: auto;
+    margin: 50px;
+    font-size: 75px;
+    color: black;
+}
+
 #cont {
-    width: 100%;
-    height: 30%;
+    width: 100vw;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 25%;
+    top: 1000px;
 }
 #logo {
     align-self: center;
+    width: auto;
+    height: 500px;
 }
 #search {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 2500px;
+    height: 275px;
     align-self: center;
 }
+
+#searchbar {
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#searchbar:hover {
+    box-shadow: 10px 10px 20px;
+}
+
 #buttons {
     align-self: center;
-    padding-top: 5%;
-}
-#footer {
-    position: absolute;
-    height: 10%;
-    background-color: lightgrey;
-    bottom: 0%;
-    width: 100%;
-    left: 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-#carbon {
-    text-align: center;
-}
-#footnav {
+    height: 75px;
     position: relative;
+    top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+.button {
+    font-size: 75px;
+    padding: 25px;
+    margin: 25px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    font-size: 10px;
+    height: 250px;
+    width: 100%;
+    background: #F2F2F2;
+    line-height: 40px;
+}
+
+#footnavleft {
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footnavright {
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fnelementleft {
+    height: 100%;
+    padding-left: 50px;
+    font-size: 75px;
+    line-height: 250px
+}
+
+.fnelementright {
+    height: 100%;
+    padding-left: 50px;
+    font-size: 75px;
+    line-height: 250px;
+}
+
+a {
+    font-family: arial;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
 }
